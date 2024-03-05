@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duo Finder Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Duo Finder Survey Form</h1>
+    <p id="description">
+      Find a friend who likes the same style of games as you by filling out this
+      survey!
+    </p>
+    <p id="description-below">
+      (Actually this doesn't work. This is just a simple example of a survey
+      project. Maybe in the future I'll turn this into something working.)
+    </p>
+    <form id="survey-form">
+      <fieldset id="first-fieldset">
+        <legend>Some required basic imformation about you</legend>
+        <label id="name-label" for="name"
+          >Name
+          <input
+            placeholder="Enter your nickname"
+            required
+            type="text"
+            id="name"
+        /></label>
+        <label id="email-label" for="email"
+          >Email
+          <input
+            placeholder="Enter your email"
+            required
+            type="email"
+            id="email"
+        /></label>
+        <label id="number-label" for="age"
+          >Age
+          <input
+            min="13"
+            max="120"
+            placeholder="Enter your age"
+            required
+            type="number"
+            id="number"
+        /></label>
+        <label id="favorite-game" for="favorite-game"
+          >Game
+          <input
+            placeholder="Enter your favorite game (optional)"
+            type="text"
+            id="favorite-game"
+        /></label>
+      </fieldset>
+      <fieldset id="second-fieldset">
+        <legend>Gender (required)</legend>
+        <label for="male">
+          <input
+            class="genders"
+            checked
+            required
+            type="radio"
+            name="gender"
+            id="male"
+            value="male"
+          />Male
+        </label>
+        <label for="female">
+          <input
+            class="genders"
+            required
+            type="radio"
+            name="gender"
+            id="female"
+            value="female"
+          />Female
+        </label>
+      </fieldset>
+      <fieldset id="third-fieldset">
+        <legend>What is your favorite type of game?</legend>
+        <label for="dropdown">
+          <select required name="dropdown" id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">MMORPG</option>
+            <option value="2">RPG</option>
+            <option value="3">ARPG</option>
+            <option value="4">Action</option>
+            <option value="5">Adventure</option>
+            <option value="6">Battle Royale</option>
+            <option value="7">Platform</option>
+            <option value="8">Survival</option>
+            <option value="9">Simulation</option>
+            <option value="10">Strategy</option>
+            <option value="11">FPS</option>
+            <option value="12">Sports</option>
+            <option value="13">Racing</option>
+            <option value="14">Fighting</option>
+            <option value="14">Fighting</option>
+            <option value="15">Sandbox</option>
+            <option value="16">Moba</option>
+            <option value="17">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset id="fourth-fieldset">
+        <legend>Choose the games you like</legend>
+        <label for="rdr2"
+          ><input
+            value="rdr2"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="rdr2"
+          />Red Dead Redemption 2</label
+        >
+        <label for="dark-souls"
+          ><input
+            value="dark-souls"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="dark-souls"
+          />Dark Souls</label
+        >
+        <label for="god-of-war"
+          ><input
+            value="god-of-war"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="god-of-war"
+          />God of War</label
+        >
+        <label for="asetto-corsa"
+          ><input
+            value="asetto-corsa"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="asetto-corsa"
+          />Asetto Corsa</label
+        >
+        <label for="fifa"
+          ><input
+            value="fifa"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="fifa"
+          />FIFA</label
+        >
+        <label for="football-manager"
+          ><input
+            value="football-manager"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="football-manager"
+          />Football Manager</label
+        >
+        <label for="minecraft"
+          ><input
+            value="minecraft"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="minecraft"
+          />Minecraft</label
+        >
+        <label for="eu4"
+          ><input
+            value="eu4"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="eu4"
+          />Europe Universalis 4</label
+        >
+        <label for="bannerlord"
+          ><input
+            value="bannerlord"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="bannerlord"
+          />Mount & Blade II Bannerlord</label
+        >
+        <label for="2077"
+          ><input
+            value="2077"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="2077"
+          />Cyberpunk 2077</label
+        >
+        <label for="skyrim"
+          ><input
+            value="skyrim"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="skyrim"
+          />The Elder Scrolls V: Skyrim</label
+        >
+        <label for="age-of-empires"
+          ><input
+            value="age-of-empires"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="age-of-empires"
+          />Age of Empires</label
+        >
+        <label for="diablo"
+          ><input
+            value="diablo"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="diablo"
+          />Diablo 4</label
+        >
+        <label for="rust"
+          ><input
+            value="rust"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="rust"
+          />Rust</label
+        >
+        <label for="baldurs-gate"
+          ><input
+            value="baldurs-gate"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="baldurs-gate"
+          />Baldur's Gate 3</label
+        >
+        <label for="ets"
+          ><input
+            value="ets"
+            class="checkbox-game"
+            type="checkbox"
+            name="only-one-game"
+            id="ets"
+          />Euro Truck Simulator 2</label
+        >
+      </fieldset>
+      <fieldset id="fifth-fieldset">
+        <legend>Maybe you just want to write something</legend>
+        <label for="bio">
+          <textarea
+            placeholder="Just write about yourself or something else..."
+            name="bio"
+            id="bio"
+            cols="30"
+            rows="3"
+          ></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>

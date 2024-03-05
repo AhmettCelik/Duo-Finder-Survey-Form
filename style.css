@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: #222831;
+  color: #eeeeee;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+input,
+select,
+textarea {
+  background-color: #393e46;
+  border: 2px solid #eeeeee;
+  color: #eeeeee;
+}
+
+fieldset {
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  border: 2px solid #eeeeee;
+}
+
+#first-fieldset input {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 0;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#third-fieldset select {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-radius: 3px;
+}
+
+#fourth-fieldset legend {
+  text-align: center;
+}
+
+#fourth-fieldset {
+  text-align: start;
+}
+
+#fourth-fieldset label {
+  display: block;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+#fifth-fieldset textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type="submit"] {
+  display: block;
+  color: #222831;
+  background-color: #eeeeee;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  border: 2px solid 222831;
+  font-size: 1.1em;
+  font-weight: 500;
+  border-radius: 3px;
+  font-family: "Poppins", sans-serif;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
